@@ -1,103 +1,68 @@
+import { rubikMonoOne } from "./layout";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div>
+      <div className="px-5 py-8 max-w-[1140px] font-medium m-auto h-full text-center">
+        <header className="flex justify-between items-center w-full">
+          <p className="text-3xl tracking-tight">mavv.</p>
+          <div className="flex items-center gap-6">
+            <p className="text-sm">About</p>
+            <div className="bg-gray-200 px-5 py-2 rounded-full">
+              <p className="text-sm">Join Waitlist</p>
+            </div>
+          </div>
+        </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <main className="flex-1 flex items-center">
+          <div className="w-full h-full relative flex flex-col justify-center">
+            <div className="py-20 text-6xl sm:text-7xl font-bold tracking-tight">
+              <h1 className="text-gray-400">
+                A <span className="text-gray-900">simpler</span> approach to
+                <span className="text-gray-900"> banking.</span>
+              </h1>
+            </div>
+            <h2 className="text-2xl font-normal pb-20 text-gray-400">
+              We stripped away the clutter of modern banking apps, giving you a
+              simple, focused view of your accounts, balances, and transactions.
+            </h2>
+            <div className="flex gap-4 m-auto">
+              <div className="bg-gray-200 px-7 py-4 rounded-full w-fit mb-20">
+                <p className="text-sm">About Us</p>
+              </div>
+              <div className="bg-[#0064FF] px-7 py-4 rounded-full w-fit text-white mb-20">
+                <p className="text-sm">Join Waitlist</p>
+              </div>
+            </div>
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/hero.png"
+              alt="Hero image"
+              width={1140}
+              height={600}
+              className="w-full h-auto rounded-lg object-contain box-border shadow-2xl mb-30"
+              priority
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+            <div className="flex items-center justify-center flex-col">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="outline-none text-4xl font-normal mb-6 text-center"
+              />
+              <div className="bg-[#0064FF] px-7 py-4 rounded-full w-fit text-white mb-30">
+                <p className="text-sm">Join Waitlist</p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div className="w-full border-t border-gray-200">
+        <div className="px-5 py-8 max-w-[1140px] font-normal text-gray-400 m-auto h-full">
+          © 2025 Mavv.
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
     </div>
   );
 }
