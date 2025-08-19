@@ -48,7 +48,7 @@ export default function Home() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="outline-none text-4xl font-normal mb-6 text-center"
+                className="outline-none text-2xl sm:text-4xl font-normal mb-6 text-center w-full overflow-wrap"
               />
               <div className="bg-[#0064FF] px-7 py-4 rounded-full w-fit text-white mb-30">
                 <p className="text-sm">Join Waitlist</p>
