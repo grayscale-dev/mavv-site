@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="px-5 py-8 max-w-[1140px] font-medium m-auto h-full text-center">
+      <div className="px-5 py-8 max-w-[1140px] font-medium m-auto h-full text-center overflow-hidden">
         <header className="flex justify-between items-center w-full">
           <p className="text-3xl tracking-tight">mavv.</p>
           <div className="flex items-center gap-6">
@@ -42,31 +42,104 @@ export default function Home() {
                 Join Waitlist
               </button>
             </div>
-            <Image
-              src="/hero-light.png"
-              alt="Hero image"
-              width={1140}
-              height={600}
-              className="w-full h-auto rounded-lg object-contain box-border shadow-2xl mb-30 block dark:hidden"
-              priority
-            />
 
-            <Image
-              src="/hero-dark.png"
-              alt="Hero image"
-              width={1140}
-              height={600}
-              className="w-full h-auto rounded-lg object-contain box-border shadow-2xl mb-30 hidden dark:block"
-              priority
-            />
+            <div className="relative dark:hidden">
+              <div className="hidden sm:block">
+                <Image
+                  src="/hero-light.png"
+                  alt="Hero image"
+                  width={1140}
+                  height={600}
+                  className="h-auto rounded-lg object-contain box-border shadow-xl mb-30 block dark:hidden"
+                  priority
+                />
+              </div>
 
-            <div className="flex items-center justify-center flex-col">
+              <div className="relative w-[150vw] h-[65vh] overflow-visible ml-25 block sm:hidden z-0">
+                <Image
+                  src="/hero-light.png"
+                  alt="Hero image"
+                  fill
+                  className="rounded-lg shadow-2xl mb-30 block dark:hidden object-cover object-left"
+                  priority
+                />
+              </div>
+
+              <div className="block sm:hidden">
+                <Image
+                  src="/phone-light.png"
+                  alt="Hero image"
+                  width={1140}
+                  height={600}
+                  className="w-[55%] h-auto rounded-lg object-contain box-border -mt-100 z-100 mr-20 block dark:hidden"
+                  priority
+                />
+              </div>
+
+              <div className="hidden sm:block">
+                <Image
+                  src="/phone-light.png"
+                  alt="Hero image"
+                  width={1140}
+                  height={600}
+                  className="w-[30%] h-auto rounded-lg object-contain box-border -mt-170 mr-20 ml-auto block dark:hidden"
+                  priority
+                />
+              </div>
+            </div>
+
+            <div className="hidden dark:block">
+              <div className="hidden sm:block">
+                <Image
+                  src="/hero-dark.png"
+                  alt="Hero image"
+                  width={1140}
+                  height={600}
+                  className="h-auto rounded-lg object-contain box-border shadow-2xl mb-30 hidden dark:block"
+                  priority
+                />
+              </div>
+
+              <div className="relative w-[150vw] h-[65vh] overflow-visible ml-25 block sm:hidden z-0">
+                <Image
+                  src="/hero-dark.png"
+                  alt="Hero image"
+                  fill
+                  className="rounded-lg shadow-2xl mb-30 hidden dark:block object-cover object-left"
+                  priority
+                />
+              </div>
+
+              <div className="block sm:hidden">
+                <Image
+                  src="/phone-dark.png"
+                  alt="Hero image"
+                  width={1140}
+                  height={600}
+                  className="w-[55%] h-auto rounded-lg object-contain box-border shadow-2xl -mt-100 z-100 mr-20 hidden dark:block"
+                  priority
+                />
+              </div>
+
+              <div className="hidden sm:block">
+                <Image
+                  src="/phone-dark.png"
+                  alt="Hero image"
+                  width={1140}
+                  height={600}
+                  className="w-[30%] h-auto rounded-lg object-contain box-border shadow-2xl -mt-170 mr-20 ml-auto hidden dark:block"
+                  priority
+                />
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center flex-col mt-20">
               <input
                 type="email"
                 placeholder="Enter your email"
                 className="outline-none text-2xl sm:text-4xl font-normal mb-6 text-center w-full overflow-wrap"
               />
-              <button className="bg-blue-600 px-7 py-4 rounded-full w-fit text-white mb-30 hover:bg-blue-500 text-sm cursor-pointer dark:bg-blue-800 dark:hover:bg-blue-700">
+              <button className="bg-blue-600 px-7 py-4 rounded-full w-fit text-white mb-20 sm:mb-30 hover:bg-blue-500 text-sm cursor-pointer dark:bg-blue-800 dark:hover:bg-blue-700">
                 Join Waitlist
               </button>
             </div>
