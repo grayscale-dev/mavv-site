@@ -28,9 +28,14 @@ export default function Home() {
             About
           </button>
         </Link>
-        <button className="bg-blue-600 px-7 py-4 rounded-full w-fit text-white mb-20 hover:bg-blue-500 text-sm cursor-pointer dark:bg-blue-800 dark:hover:bg-blue-700">
-          Request Access
-        </button>
+        <Link
+          href="https://cdn.forms-content-1.sg-form.com/416bb6c7-7ee6-11f0-9db3-c21596751a73"
+          target="_blank"
+        >
+          <button className="bg-blue-600 px-7 py-4 rounded-full w-fit text-white mb-20 hover:bg-blue-500 text-sm cursor-pointer dark:bg-blue-800 dark:hover:bg-blue-700">
+            Request Access
+          </button>
+        </Link>
       </div>
 
       <div className="relative dark:hidden">
@@ -121,17 +126,6 @@ export default function Home() {
             priority
           />
         </div>
-      </div>
-
-      <div className="flex items-center justify-center flex-col mt-30">
-        <input
-          type="email"
-          placeholder="Enter your email"
-          className="outline-none text-2xl sm:text-4xl font-normal mb-6 text-center w-full overflow-wrap"
-        />
-        <button className="bg-blue-600 px-7 py-4 rounded-full w-fit text-white mb-20 sm:mb-30 hover:bg-blue-500 text-sm cursor-pointer dark:bg-blue-800 dark:hover:bg-blue-700">
-          Request Access
-        </button>
       </div>
     </div>
   );

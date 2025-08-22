@@ -30,9 +30,14 @@ export default function RootLayout({ children }) {
                 <Link href="/about">
                   <p className="text-sm">About</p>
                 </Link>
-                <button className="bg-neutral-200 px-5 py-2 rounded-full text-sm hover:bg-neutral-100 cursor-pointer dark:bg-neutral-900 dark:hover:bg-neutral-800">
-                  Request Access
-                </button>
+                <Link
+                  href="https://cdn.forms-content-1.sg-form.com/416bb6c7-7ee6-11f0-9db3-c21596751a73"
+                  target="_blank"
+                >
+                  <button className="bg-neutral-200 px-5 py-2 rounded-full text-sm hover:bg-neutral-100 cursor-pointer dark:bg-neutral-900 dark:hover:bg-neutral-800">
+                    Request Access
+                  </button>
+                </Link>
               </div>
             </header>
 
