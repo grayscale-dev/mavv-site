@@ -28,6 +28,7 @@ export default function TermsOfService() {
         }}
         dismissableMask={true}
         maximizable={true}
+        draggable={false}
       >
         <section className="space-y-4">
           <p>

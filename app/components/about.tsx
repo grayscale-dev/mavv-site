@@ -26,6 +26,7 @@ export default function About({ link = false }: { link?: boolean }) {
           setVisible(false);
         }}
         dismissableMask={true}
+        draggable={false}
       >
         <div className="text-left px-3">
           <div className="py-10 text-4xl sm:text-6xl font-bold tracking-tight">
