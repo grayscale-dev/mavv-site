@@ -6,7 +6,6 @@ import { useState } from "react";
 
 export default function PrivacyPolicy() {
   const [visible, setVisible] = useState(false);
-  let isMaximized = false;
 
   return (
     <>

@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "primereact/button";
 import About from "./components/about";
 import JoinWaitlist from "./components/join-waitlist";
 

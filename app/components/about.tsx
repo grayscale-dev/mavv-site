@@ -1,11 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { Button } from "primereact/button";
 import { Dialog } from "primereact/dialog";
-import { InputText } from "primereact/inputtext";
 import { useState } from "react";
-import JoinWaitlist from "./join-waitlist";
 
 export default function About({ link = false }: { link?: boolean }) {
   const [visible, setVisible] = useState(false);

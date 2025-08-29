@@ -1,10 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { Button } from "primereact/button";
 import { Dialog } from "primereact/dialog";
 import { InputText } from "primereact/inputtext";
-import { Menubar } from "primereact/menubar";
 import { Message } from "primereact/message";
 import { useState } from "react";
 
@@ -41,8 +39,6 @@ export default function JoinWaitlist({
   function submit() {
     console.log("Submitting");
   }
-
-  function onClose() {}
 
   return (
     <>

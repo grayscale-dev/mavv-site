@@ -3,9 +3,6 @@ import "./globals.css";
 import { PrimeReactProvider } from "primereact/api";
 import "primereact/resources/themes/bootstrap4-light-blue/theme.css";
 import Header from "./components/header";
-import Link from "next/link";
-import TermsOfService from "./components/terms-of-service";
-import PrivacyPolicy from "./components/privacy-policy";
 import Footer from "./components/footer";
 
 const rubik = Rubik({
